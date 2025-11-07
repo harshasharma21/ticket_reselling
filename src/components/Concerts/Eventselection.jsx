@@ -17,7 +17,7 @@ const EventSelection = () => {
   // Handle submission
   const handleSubmit = () => {
   if (selectedEvent && selectedDate && selectedSlot) {
-    alert(`Event: ${selectedEvent}\nDate: ${selectedDate}\nSlot: ${selectedSlot}`);=
+    alert(`Event: ${selectedEvent}\nDate: ${selectedDate}\nSlot: ${selectedSlot}`);
     setTimeout(() => {
       navigate('/');
     }, 5000);
