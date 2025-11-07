@@ -16,12 +16,15 @@ const EventSelection = () => {
 
   // Handle submission
   const handleSubmit = () => {
-    if (selectedEvent && selectedDate && selectedSlot) {
-      navigate(`/booking/${categoryId}/${cardIndex}?event=${selectedEvent}&date=${selectedDate}&slot=${selectedSlot}`);
-    } else {
-      alert("Please select all fields before proceeding.");
-    }
-  };
+  if (selectedEvent && selectedDate && selectedSlot) {
+    alert(`Event: ${selectedEvent}\nDate: ${selectedDate}\nSlot: ${selectedSlot}`);=
+    setTimeout(() => {
+      navigate('/');
+    }, 5000);
+  } else {
+    alert("Please select all fields before proceeding.");
+  }
+};
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white px-4 py-6">
