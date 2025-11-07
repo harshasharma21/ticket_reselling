@@ -19,7 +19,7 @@ const EventSelection = () => {
   if (selectedEvent && selectedDate && selectedSlot) {
     alert(`Event: ${selectedEvent}\nDate: ${selectedDate}\nSlot: ${selectedSlot}`);
     setTimeout(() => {
-      navigate('/');
+      navigate('/dummy');
     }, 5000);
   } else {
     alert("Please select all fields before proceeding.");
